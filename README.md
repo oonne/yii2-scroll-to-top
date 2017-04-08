@@ -9,7 +9,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist oonne/yii2-scroll-to-top "*"
+composer require --prefer-dist oonne/yii2-scroll-to-top "*"
 ```
 
 or add

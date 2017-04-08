@@ -31,13 +31,13 @@ class ScrollTop extends Widget
     public function run()
     {
         return Html::a(
-                    Html::tag(
-                        'i', 
-                        '', 
-                        ['class'=>'glyphicon glyphicon-menu-up scroll-top-circle']
-                    ),
-                    '#',
-                    ['id'=>'scroll-to-top', 'class'=>'scroll-top']
-                );
+            Html::tag(
+                'i', 
+                '', 
+                ['class'=>'glyphicon glyphicon-menu-up scroll-top-circle']
+            ),
+            '#',
+            ['id'=>'scroll-to-top', 'class'=>'scroll-top']
+        );
     }
 }
