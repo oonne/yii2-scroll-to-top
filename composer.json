@@ -1,0 +1,22 @@
+{
+    "name": "oonne/yii2-scroll-to-top",
+    "description": "A Yii 2 widget to add scroll-to-top button.",
+    "keywords": ["yii2", "extension", "scroll", "top", "scroll-to-top"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/oonne/yii2-scroll-to-top/issues",
+        "source": "https://github.com/oonne/yii2-scroll-to-top"
+    },
+    "authors": [
+        {
+            "name": "JAY",
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": { "oonne\\scrollTop\\": "" }
+    }
+}
