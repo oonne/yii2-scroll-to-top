@@ -18,6 +18,11 @@ use yii\helpers\Html;
 class ScrollTop extends Widget
 {
     /**
+     * @var HTML the tag content for the scroll-to-top button
+     */
+    public $tagContent = 'TOP';
+
+    /**
      * @var CSS the class name for the scroll-to-top button
      */
     public $options = 'oonne-scroll-top';
@@ -35,6 +40,6 @@ class ScrollTop extends Widget
      */
     public function run()
     {
-        return Html::tag('div', 'TOP', ['id'=>'scroll-to-top', 'class'=>$this->options]);
+        return Html::tag('div', $this->tagContent, ['id'=>'scroll-to-top', 'class'=>$this->options]);
     }
 }

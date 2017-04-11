@@ -31,3 +31,10 @@ Usage
     'options' => 'custom-css class-name'
 ]); ?>
 ```
+```php
+<?php use oonne\scrollTop\ScrollTop; ?>
+<?= ScrollTop::widget([
+    'tagContent' => '<i class="top-icon"></i>',
+    'options' => 'custom-css class-name',
+]); ?>
+```
