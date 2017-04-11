@@ -3,25 +3,16 @@
  * @copyright Copyright (c) JAY
  */
 
-.scroll-top {
-    position: fixed;
-    bottom: 20px;
-    right: 25px;
+.oonne-scroll-top {
     display: none;
-    z-index: 10000;
+    z-index: 10240;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(50, 50, 50, .9);
+    color: #fff;
     text-align: center;
-}
-
-.scroll-top-circle {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    background-color: #a0a0a0;
-    padding-top: 5px;
-    font-size: 1.25em;
-    color: #ffffff;
-}
-
-.scroll-top-circle:hover {
-    background-color: #666666;
 }
