@@ -1,6 +1,6 @@
-yii2-scroll-top
+yii2-scroll-to-top
 =====================
-A Yii 2 widget to add scroll-to-top button. Base on the .animate jQuery function.
+A Yii2 widget to add scroll-to-top button. Base on the .animate jQuery function.
 
 Installation
 ------------
