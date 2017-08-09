@@ -3,22 +3,23 @@
  * @copyright Copyright (c) JAY
  */
 
-$(function(){  
-    
+$(function(){
     var btn = $('#scroll-to-top');
-    var scrollerTriggerPoint = $('html, body').offset().top + 160;
-
+    var scrollBtnIsvisible = false;
+    var scrollerTriggerPoint = $('html, body').offset().top + 150;
+    
     $(document).on('scroll', function() {
         var pos = $(window).scrollTop();
-        if (pos > scrollerTriggerPoint && !btn.is(':visible')) {
-            btn.fadeIn();
-        } else if (pos < scrollerTriggerPoint && btn.is(':visible')) {
-            btn.fadeOut();
+        if (pos > scrollerTriggerPoint && !scrollBtnIsvisible) {
+            btn.stop().fadeIn();
+            scrollBtnIsvisible = true;
+        } else if (pos < scrollerTriggerPoint && scrollBtnIsvisible) {
+            btn.stop().fadeOut();
+            scrollBtnIsvisible = false;
         }
     }).scroll();
 
     btn.on('click', function(e) {
         $('html, body').animate({ scrollTop: 0 }, 300);
     });
-    
 });
